@@ -1,0 +1,12 @@
+INDEX VERSION 1.4+C:\Users\WoFe\Desktop\gmj_java\gmj_java\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+2463977581.index
+3898918641.index
+28226876.index
+3097161215.index
+3885443083.index
+563330117.index
+3287091533.index
+1007440005.index
+182423883.index
+3095075680.index
+383641943.index

@@ -1,0 +1,14 @@
+package a111112;
+
+import java.util.Date;
+
+public class T1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String a = new Date(2016,5,24).toString().toUpperCase();
+		System.out.println(a);
+    }
+}
+
+	

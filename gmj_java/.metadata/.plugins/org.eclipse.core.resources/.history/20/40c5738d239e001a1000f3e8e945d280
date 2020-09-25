@@ -1,0 +1,21 @@
+package a111112;
+
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class T1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int hsd = 12;
+        int xtotal = 0;
+        while(true){
+			xtotal += hsd%10;
+            if(hsd/10==0) break;
+            hsd/=10;
+		}
+        System.out.println(xtotal+"  "+hsd+"  "+xtotal%hsd);
+	}
+
+}
+	

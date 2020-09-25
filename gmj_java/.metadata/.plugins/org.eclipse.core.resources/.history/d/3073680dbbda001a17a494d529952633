@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<table style="width:700" border="1">
+<tr><td colspan="2"><h2>encore-shop</h2></td></tr>
+<tr><td style="width:300; height:600">
+<div id="joinform">
+<label for="joinform">join</label><br/>
+<input v-model="id" placeholder="id를 입력하시오"><br/>
+<input v-model="id" placeholder="pwd를 입력하시오"><br/>
+<input v-model="name" placeholder="이름을 입력하시오"><br/>
+<input v-model="email" placeholder="email를 입력하시오"><br/>
+<select v-model="selected">
+  <option disabled value="">Please select one</option>
+  <option>CONSUMER</option>
+  <option>SELLER</option>
+</select>
+<button v-on:click="login">가입</button>
+<a href="login.html">로그인</a>
+</div>
+</td>
+<td style="width:400; height:600">내용</td>
+</tr>
+</table>
+<script type="text/javascript">
+new Vue({
+	el:"@left",
+	data:{
+		id:'',
+		pwd:'',
+	},
+	methods:{
+		login:function(){
+			axios.get('http://localhost:888/members',{params:{'id':this.id,'pwd':this.pwd}})
+			.then(res=>{
+				alert(res.status);
+				alert(res.data.action);
+				alert(res.data.result);
+			})
+		}
+	}
+});
+</script>
+<body>
+
+</body>
+</html>

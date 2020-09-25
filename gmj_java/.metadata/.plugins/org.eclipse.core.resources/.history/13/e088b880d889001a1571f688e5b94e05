@@ -1,0 +1,15 @@
+package p0429;
+
+import java.util.ArrayList;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		DaoImp dao = new DaoImp();
+		ArrayList<Member> list = dao.selectAll();
+		System.out.println(list);
+		dao.insert(new Member(0,"dddd","4444","µø¿€±∏"));
+	}
+
+}

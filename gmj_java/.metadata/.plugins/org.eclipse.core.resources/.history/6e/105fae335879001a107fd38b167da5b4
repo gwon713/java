@@ -1,0 +1,63 @@
+package p0408;
+
+import java.util.Scanner;
+
+public class quiz1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		
+		//문제1
+		/*int score[] = new int[5];
+		float avg = 0;
+		String[] sub = {"번호","국어","영어","수학"};
+		
+		System.out.print("이름 : ");
+		String name = sc.nextLine();
+		
+		for(int i=0;i<4;i++){
+			System.out.print(sub[i]+" : ");
+			score[i]=sc.nextInt();
+		}
+		for(int i=1; i<4; i++){
+			score[4]+=score[i];
+			System.out.print(sub[i]+" : "+score[i]+" ");
+		}
+		System.out.println();
+		avg=(float)score[4]/3;
+		System.out.println("총점 : "+score[4]+" 평균 : "+avg);*/
+		
+		//버블 정렬
+		int list[] = {5,8,3,6,2,9,1,7,4};
+		int sub=0;
+//		for(int i=0;i<list.length-1;i++){
+//			for(int j=0; j<list.length-1;j++){
+//				if(list[j]>list[j+1]){
+//					sub = list[j+1];
+//					list[j+1]=list[j];
+//					list[j]=sub;
+//				}
+//			}
+//		}
+//		for(int i=0;i<list.length;i++){
+//			System.out.print(list[i]+" ");
+//		}
+		int j=list.length-2;
+		for(int i=0;i<list.length;i++){
+			list[i]=sub;
+			while(j>=0 && list[j]>sub){
+				
+				list[j+1]=list[j];
+				j--;
+			}
+		j++;
+		list[j]=sub;
+		j=i-1;
+		}
+		for(int i=0;i<list.length;i++){
+			System.out.print(list[i]+" ");
+		}
+	}
+
+}

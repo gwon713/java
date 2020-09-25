@@ -1,0 +1,10 @@
+package p0429;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		DaoImp dao = new DaoImp(dao);
+	}
+
+}

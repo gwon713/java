@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+
+.text{
+	color:black;
+	background-color:white;
+	width:210px;
+	height:30px;
+}
+.btn{
+	color:black;
+	background-color:white;
+	width:50px;
+	height:30px;
+}
+</style>
+<script type="text/javascript">
+var num1=0, num2=0
+var op_ch = ''
+var r = 112312441
+function num(n){
+	if(f.res.value==r){
+		c1()
+	}
+	f.res.value+=n
+}
+function c1(){
+	f.res.value=""
+}
+function op(o){
+	op_ch = o
+	num1 = f.res.value
+	c1()
+}
+function eq(){
+	num2 = f.res.value
+	r = eval(num1+op_ch+num2)
+	f.res.value = r
+	num1 = r
+}
+</script>
+</head>
+<body>
+<form action="" name="f">
+<table>
+	<tr>
+		<td colspan="4"><input class="text" type="text" name="res"></td>	
+	</tr>
+	<tr>
+		<td><input class="btn" type="button" value="1" onclick="num(1)"></td>
+		<td><input class="btn" type="button" value="2" onclick="num(2)"></td>
+		<td><input class="btn" type="button" value="3" onclick="num(3)"></td>
+		<td><input class="btn" type="button" value="+" onclick="op('+')"></td>
+	</tr>
+	<tr>
+		<td><input class="btn" type="button" value="4" onclick="num(4)"></td>
+		<td><input class="btn" type="button" value="5" onclick="num(5)"></td>
+		<td><input class="btn" type="button" value="6" onclick="num(6)"></td>
+		<td><input class="btn" type="button" value="-" onclick="op('-')"></td>
+	</tr>
+	<tr>
+		<td><input class="btn" type="button" value="7" onclick="num(7)"></td>
+		<td><input class="btn" type="button" value="8" onclick="num(8)"></td>
+		<td><input class="btn" type="button" value="9" onclick="num(9)"></td>
+		<td><input class="btn" type="button" value="*" onclick="op('*')"></td>
+	</tr>
+	<tr>
+		<td><input class="btn" type="reset" value="c" onclick="c1()"></td>
+		<td><input class="btn" type="button" value="0" onclick="num(0)"></td>
+		<td><input class="btn" type="button" value="=" onclick="eq()"></td>
+		<td><input class="btn" type="button" value="/" onclick="op('/')"></td>
+	</tr>
+</table>
+</form>
+</body>
+</html>

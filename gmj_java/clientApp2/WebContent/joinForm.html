@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$("#btn1").click(function(){
+			var id = $("#id").val();
+			var pwd = $("#pwd").val();
+			var name = $("#name").val();
+			var email = $("#email").val();
+			var typei = $("#typei").val();
+
+		$.ajax({
+			url : "http://localhost:8888/members",
+			method : "post",
+			data : {"id" : id, "pwd" : pwd, "name" : name, "email" : email, "typei" : typei},
+			dataType: "text",
+			success : function(data) {
+				var obj = $.parseJSON(data);
+				var result = obj.result;
+				alert(result);
+				if(result){
+					var page = "index.html";
+					location.href = page;
+				}else{
+					$("#title").html("join error");
+					alert("join error");
+				}
+			}
+
+			
+		});
+		});
+	});
+</script>
+</head>
+<body>
+<h3>encore shop</h3>
+
+<h4 id="title">join</h4>
+<a href = "index.html">login</a>
+<table border="1">
+<tr><th>ID</th><td><input type="text" id="id"></td></tr>
+<tr><th>PWD</th><td><input type="text" id="pwd"></td></tr>
+<tr><th>NAME</th><td><input type="text" id="name"></td></tr>
+<tr><th>EMAIL</th><td><input type="text" id="email"></td></tr>
+<tr><th>TYPE</th><td><input name="typei" type="radio" value="0" checked>CONSUMER
+<input name="typei" type="radio" value="1">SELLER</td></tr>
+
+<tr><td colspan="2"><input type="button" value="join" id="btn1"></td></tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,18 @@
+package a111112;
+
+import java.util.Calendar;
+
+public class T1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int a=5,b=24;
+		String[] answer = {"","SUN","MON","TUE","WED","THU","FRI","SAT"};
+		 Calendar cal = Calendar.getInstance();
+		 cal.set(2016, a,b);
+		 
+		 System.out.println(cal.DAY_OF_WEEK_IN_MONTH); 
+    }
+}
+
+	

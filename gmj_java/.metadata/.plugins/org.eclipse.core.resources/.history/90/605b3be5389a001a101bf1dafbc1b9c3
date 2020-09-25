@@ -1,0 +1,23 @@
+package a111112;
+
+
+public class T1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int n =2;
+		int i = 0;
+		int x = -4;
+		int a = x;
+		long[] answer = new long[n];
+		boolean flag = true;
+		while(i < n){
+			answer[i]=x;
+			x+=a;
+			System.out.println(answer[i]);
+			i++;
+		}
+		
+	}
+
+}

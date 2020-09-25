@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+<h3>join</h3>
+<div id="form">
+<input v-model="id" placeholder="id를 입력하시오"><br/>
+<input v-model="pwd" placeholder="pwd를 입력하시오"><br/>
+<input v-model="name" placeholder="name를 입력하시오"><br/>
+<button v-on:click="send">가입</button>
+</div>
+<script type="text/javascript">
+new Vue({
+	el:"#form",
+	data:{
+		id:'',
+		pwd:'',
+		name:'',
+	}
+	method:{
+		send:function(){
+			axios.post('input.jsp',
+					{params:{id:this.id}}
+			)
+			.then(res=>{
+				alert(res.status);
+				alert(res.data);
+			});
+		}
+	}
+});
+</script>
+</body>
+</html>

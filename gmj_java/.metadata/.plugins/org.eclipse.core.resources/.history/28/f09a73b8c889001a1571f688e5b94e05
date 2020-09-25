@@ -1,0 +1,62 @@
+package p0429;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.util.ArrayList;
+
+public class DaoImp implements Dao {
+	private DBConn db;
+	public DaoImp(){
+		db = DBConn.getInstance();
+	}
+	@Override
+	public void insert(Member m) {
+		// TODO Auto-generated method stub
+		String sql = "insert into addr values(seq_addr.nextval,?,?,?)";
+		Connection conn = db.getConnect();
+		try {
+			PreparedStatement pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, m.getName());
+			pstmt.setString(2, m.getTel());
+			pstmt.setString(3, m.getAddress());
+			pstmt.executeUpdate();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}finally{
+			conn.close();
+		}
+	}
+
+	@Override
+	public Member selectByNum(int num) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public ArrayList<Member> selectByName(String name) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public ArrayList<Member> selectAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void update(Member m) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void delete(String name) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

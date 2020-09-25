@@ -1,0 +1,34 @@
+1596525016963	Delete elements
+1596525029528	Delete element
+1596525031264	Delete element
+1596525043889	Delete element
+1596525080777	Delete element
+1596525092268	Delete element
+1596525094624	Delete element
+1596525336953	Rename package 'com.example.app2.model'
+1596588873994	Delete element
+1596593563335	Rename resource 'prodect'
+1596598492821	Rename resource 'listbyseller.jsp'
+1596607561237	Delete element
+1596610220272	Move compilation unit
+1596612091005	Rename type 'Order'
+1596612105814	Rename type 'OrderType'
+1596612120980	Rename type 'OrderService'
+1596612138367	Rename type 'Order_Repos'
+1596612193237	Rename type 'OrderController'
+1596616420792	Rename resource 'order.jsp'
+1596676803995	Delete element
+1596678212862	Rename type 'Shop_OrderType'
+1596679439636	Rename type 'Shop_Order_Repos'
+1596679449346	Rename type 'Shop_Order'
+1596679457076	Rename type 'Shop_OrderService'
+1596684758509	Rename resource 'list.jsp'
+1596684995125	Rename type 'Shop_OrderController'
+1596691268401	Copy file
+1596691914837	Copy file
+1596759735860	Rename package 'com.example.app2'
+1596759746411	Rename package 'com.example.app2.model.product'
+1596759753560	Rename package 'com.example.app2.model.order'
+1596759764042	Rename package 'com.example.app2.model.join'
+1596759772265	Rename package 'com.example.app2.controllers'
+1596760133011	Delete elements

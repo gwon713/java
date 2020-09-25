@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+<script type="text/javascript">
+document.write("hello javascript222<br>");
+var a=10
+document.write("a="+a+"<br>");
+b="hello msg";
+document.write("b="+b+"<br>");
+msg = prompt("계산하고 싶은 수식을 입력하시오");
+res = eval(msg);
+document.write(msg+"="+res+"<br>");
+alert("계산완료")
+document.write("<table border='1'><tr>")
+for(i=2;i<10;i++){
+	document.write("<td>")
+	for(j=1;j<10;j++){
+		document.write(i+" * "+j+" = "+(i*j)+"<br>");
+	}
+	document.write("</td>")
+}
+document.write("</tr></table>")
+</script>
+</body>
+</html>

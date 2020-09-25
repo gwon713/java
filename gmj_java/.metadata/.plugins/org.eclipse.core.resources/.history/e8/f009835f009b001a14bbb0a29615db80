@@ -1,0 +1,21 @@
+package a111112;
+
+import java.util.Scanner;
+
+public class T1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String s = "1234";
+		boolean flag = true;
+		try {
+		      Double.parseDouble(s);
+		      flag=true;
+		  } catch(NumberFormatException e) {
+		      flag=false;
+		  }
+		System.out.println(flag);
+	}
+
+}
+	

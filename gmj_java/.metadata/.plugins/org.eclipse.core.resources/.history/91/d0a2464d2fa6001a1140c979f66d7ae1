@@ -1,0 +1,17 @@
+package a111112;
+
+import java.util.Arrays;
+import java.util.Collections;
+
+public class T1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println(8/3);
+		
+			
+		
+    }
+}
+
+	

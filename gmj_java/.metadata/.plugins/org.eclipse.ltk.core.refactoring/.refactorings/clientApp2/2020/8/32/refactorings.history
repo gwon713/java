@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;clientApp2/WebContent/join.html&apos; to &apos;joinForm.html&apos;" description="Rename resource &apos;join.html&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="WebContent/join.html" name="joinForm.html" stamp="1596789134992" updateReferences="true"/>
+</session>

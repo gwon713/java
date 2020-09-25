@@ -1,0 +1,15 @@
+package a111112;
+
+
+public class T1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String s = "qwer";
+		int slength = s.length();
+		if(slength%2==0){
+			System.out.println(s.substring(slength/2,slength/2+1));
+		}
+	}
+
+}

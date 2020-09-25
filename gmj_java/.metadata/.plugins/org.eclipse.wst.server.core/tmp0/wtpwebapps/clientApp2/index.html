@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$("#btn1").click(function(){
+			var id = $("#id").val();
+			var pwd = $("#pwd").val();
+		$.ajax({
+			url : "http://localhost:8888/members",
+			method : "get",
+			data : {"id" : id, "pwd" : pwd},
+			dataType: "text",
+			success : function(data) {
+				var obj = $.parseJSON(data);
+				var result = obj.result;
+				if(result){
+					var page = ""
+					if(obj.typei==0){
+						page = "consumer.html";
+					}else{
+						page = "seller.html";
+					}
+					sessionStorage.setItem("id", id);
+					sessionStorage.setItem("typei", obj.typei);
+					sessionStorage.setItem("types", obj.types);
+					location.href = page;
+				}else{
+					$("#title").html("login error");
+					alert("login error");
+				}
+			}
+
+			
+		});
+		});
+	});
+</script>
+</head>
+<body>
+<h3>encore shop</h3>
+
+<h4 id="title">login</h4>
+<a href = "joinForm.html">join</a>
+<table border="1">
+<tr><th>ID</th><td><input type="text" id="id"></td></tr>
+<tr><th>PWD</th><td><input type="text" id="pwd"></td></tr>
+<tr><td colspan="2"><input type="button" value="login" id="btn1"></td></tr>
+</table>
+
+</body>
+</html>

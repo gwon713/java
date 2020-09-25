@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Command.java&apos; to &apos;0716/src/cmd&apos;&#x0D;&#x0A;- Original project: &apos;web0722&apos;&#x0D;&#x0A;- Destination element: &apos;0716/src/cmd&apos;&#x0D;&#x0A;- Original element: &apos;guestbook.cmd.Command.java&apos;" description="Copy compilation unit" destination="=0716/src&lt;cmd" element1="/src&lt;guestbook.cmd{Command.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1595815728758" units="1" version="1.0"/>
+</session>
